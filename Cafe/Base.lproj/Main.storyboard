@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe BROWN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7S-F3-jXe">
+                                <rect key="frame" x="20" y="53" width="374" height="51"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="4i3-uo-86K">
+                                <rect key="frame" x="55" y="112" width="305" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="INP-4H-SDN"/>
+                                    <constraint firstAttribute="width" constant="305" id="yJE-p3-28t"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-Im-9Ko">
+                                <rect key="frame" x="20" y="327" width="374" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="5nC-eH-oBN"/>
+                                    <constraint firstAttribute="width" constant="374" id="lSX-KJ-thc"/>
+                                </constraints>
+                                <string key="text">BROWN - це мережа сучасних кав’ярень, де органічно поєднуються останні світові тенденції кавової індустрії та перевірені часом традиції, які формувалися роками.
+Початковим завданням було об’єднання шанувальників чаю та кави в затишній атмосфері.
+Для тих, хто бажає пити якісні напої не тільки в закладі - ми пропонуємо багато сортів чаю та кави у магазині кав'ярні.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хочеш зробити замовлення?натисни на кнопку та вибери найсмачнішу каву!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGG-5H-WWm">
+                                <rect key="frame" x="20" y="555" width="374" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="rJQ-zu-h3m"/>
+                                    <constraint firstAttribute="width" constant="374" id="yMA-iA-f2T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBrownColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qm-uq-Q1e">
+                                <rect key="frame" x="131" y="800.5" width="153" height="39.5"/>
+                                <color key="backgroundColor" red="0.63137254899999995" green="0.98473781979999997" blue="0.57471149470000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Вибрати!">
+                                    <fontDescription key="titleFontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="5kE-nX-X4m" kind="show" id="15T-3W-DXi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u7S-F3-jXe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6jz-Te-YDp"/>
+                            <constraint firstItem="4Qm-uq-Q1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="7Pb-5K-BxO"/>
+                            <constraint firstItem="bGG-5H-WWm" firstAttribute="top" secondItem="c6H-Im-9Ko" secondAttribute="bottom" constant="8" symbolic="YES" id="Esh-St-Evw"/>
+                            <constraint firstItem="u7S-F3-jXe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="G2E-w2-iFb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bGG-5H-WWm" secondAttribute="trailing" constant="20" id="Jkc-YG-CHy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Qm-uq-Q1e" secondAttribute="bottom" constant="22" id="Pls-LH-TQ7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c6H-Im-9Ko" secondAttribute="trailing" constant="20" id="Y4J-Bf-cix"/>
+                            <constraint firstItem="4i3-uo-86K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="YFL-T8-62v"/>
+                            <constraint firstItem="c6H-Im-9Ko" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aIW-lf-rPF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Qm-uq-Q1e" secondAttribute="trailing" constant="130" id="jvT-By-1Au"/>
+                            <constraint firstItem="4i3-uo-86K" firstAttribute="top" secondItem="u7S-F3-jXe" secondAttribute="bottom" constant="8" symbolic="YES" id="kPB-nT-pDS"/>
+                            <constraint firstItem="4Qm-uq-Q1e" firstAttribute="top" relation="lessThanOrEqual" secondItem="bGG-5H-WWm" secondAttribute="bottom" constant="207" id="l5R-fV-MMb"/>
+                            <constraint firstItem="c6H-Im-9Ko" firstAttribute="top" secondItem="4i3-uo-86K" secondAttribute="bottom" constant="10" id="ovO-Yd-WSQ"/>
+                            <constraint firstItem="bGG-5H-WWm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rDd-gL-mOL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u7S-F3-jXe" secondAttribute="trailing" constant="20" id="uiD-sA-CSb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4i3-uo-86K" secondAttribute="trailing" constant="54" id="z7E-Bc-cSO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="4Qm-uq-Q1e" id="Ag0-2Y-nP8"/>
+                        <outlet property="imageView" destination="4i3-uo-86K" id="RCA-Wp-9Qd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
+        </scene>
+        <!--View Controller Cafe-->
+        <scene sceneID="eRk-JX-Bck">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="5kE-nX-X4m" customClass="ViewControllerCafe" customModule="Cafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tqp-v9-F0z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe BROWN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN2-9U-hTM">
+                                <rect key="frame" x="20" y="53" width="374" height="50.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вибери що ообі до вподоби!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyb-wo-Yat">
+                                <rect key="frame" x="20" y="111.5" width="374" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="I0V-yL-54O"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="XRS-Ta-tGQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vn1-nH-Olt">
+                                <rect key="frame" x="20" y="161.5" width="374" height="286"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="286" id="dxA-bs-Xxb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RA-6r-HGy">
+                                <rect key="frame" x="91" y="721" width="233" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="lYt-1i-083"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Я готовий вибрати!">
+                                    <fontDescription key="titleFontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ETZ-xH-zA9" kind="show" identifier="" id="71c-Ho-SAh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7zc-kL-Fq4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zyb-wo-Yat" firstAttribute="leading" secondItem="7zc-kL-Fq4" secondAttribute="leading" constant="20" id="21X-zr-Vt8"/>
+                            <constraint firstItem="zyb-wo-Yat" firstAttribute="top" secondItem="CN2-9U-hTM" secondAttribute="bottom" constant="8" symbolic="YES" id="5pD-e3-2Vz"/>
+                            <constraint firstItem="Vn1-nH-Olt" firstAttribute="leading" secondItem="7zc-kL-Fq4" secondAttribute="leading" constant="20" id="6Rw-lv-U77"/>
+                            <constraint firstItem="Vn1-nH-Olt" firstAttribute="top" secondItem="zyb-wo-Yat" secondAttribute="bottom" constant="15" id="LQJ-zl-yjp"/>
+                            <constraint firstItem="CN2-9U-hTM" firstAttribute="leading" secondItem="7zc-kL-Fq4" secondAttribute="leading" constant="20" id="Lq8-Gq-8OG"/>
+                            <constraint firstItem="0RA-6r-HGy" firstAttribute="leading" secondItem="7zc-kL-Fq4" secondAttribute="leading" constant="91" id="M7X-cD-l5C"/>
+                            <constraint firstItem="CN2-9U-hTM" firstAttribute="top" secondItem="7zc-kL-Fq4" secondAttribute="top" constant="9" id="a2g-J4-aAj"/>
+                            <constraint firstItem="7zc-kL-Fq4" firstAttribute="trailing" secondItem="Vn1-nH-Olt" secondAttribute="trailing" constant="20" id="hQd-te-yAo"/>
+                            <constraint firstItem="7zc-kL-Fq4" firstAttribute="trailing" secondItem="0RA-6r-HGy" secondAttribute="trailing" constant="90" id="j4f-FI-R4H"/>
+                            <constraint firstItem="7zc-kL-Fq4" firstAttribute="bottom" secondItem="0RA-6r-HGy" secondAttribute="bottom" constant="61" id="nH6-gW-DpT"/>
+                            <constraint firstItem="7zc-kL-Fq4" firstAttribute="trailing" secondItem="CN2-9U-hTM" secondAttribute="trailing" constant="20" id="uco-O3-i7D"/>
+                            <constraint firstItem="7zc-kL-Fq4" firstAttribute="trailing" secondItem="zyb-wo-Yat" secondAttribute="trailing" constant="20" id="uzS-jH-qZ6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="su6-bB-oDz"/>
+                    <connections>
+                        <outlet property="button" destination="0RA-6r-HGy" id="fgd-ck-12K"/>
+                        <outlet property="imageView" destination="Vn1-nH-Olt" id="McK-P4-xIG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="giB-vW-sCH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737.68115942028987" y="67.633928571428569"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="9MM-7h-Fvb">
+            <objects>
+                <tableViewController id="glm-GC-idR" customClass="TableViewController" customModule="Cafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="btN-FV-3Ki">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Title" id="U2Z-ul-bsj">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U2Z-ul-bsj" id="JAe-HX-Hhw">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Brw-rN-d9H" kind="show" identifier="Show Detail" id="9hf-bB-5uq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="glm-GC-idR" id="Y57-yQ-BrN"/>
+                            <outlet property="delegate" destination="glm-GC-idR" id="0p4-rz-4Nq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="0l0-f4-bGb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gc1-nj-67a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="68"/>
+        </scene>
+        <!--View Controller End-->
+        <scene sceneID="9n2-aQ-uVt">
+            <objects>
+                <viewController id="Brw-rN-d9H" customClass="ViewControllerEnd" customModule="Cafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2cV-BO-rlw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe BROWN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfj-uS-2oe">
+                                <rect key="frame" x="20" y="65" width="374" height="51"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bK2-5z-CjA">
+                                <rect key="frame" x="20" y="120" width="374" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="J0R-a3-WHO"/>
+                                    <constraint firstAttribute="width" constant="374" id="P2p-m1-dBa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="MJO-9V-Q9w">
+                                <rect key="frame" x="20" y="153" width="374" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="8ab-fH-j1j"/>
+                                    <constraint firstAttribute="height" constant="230" id="gpr-8p-IcX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnd-lA-s5c">
+                                <rect key="frame" x="113" y="767" width="189" height="31"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="evJ-6Z-eel"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Підтвердити)"/>
+                                <connections>
+                                    <action selector="tapped:" destination="Brw-rN-d9H" eventType="touchUpInside" id="M1i-Lb-Cl0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Напій готовий, Смачного!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xz-YJ-VyE">
+                                <rect key="frame" x="20" y="714" width="374" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="vzO-Cu-PCQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="xqE-PF-vuq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5d2-35-BNQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MJO-9V-Q9w" firstAttribute="leading" secondItem="5d2-35-BNQ" secondAttribute="leading" constant="20" id="21f-Zt-Vnu"/>
+                            <constraint firstItem="bK2-5z-CjA" firstAttribute="leading" secondItem="5d2-35-BNQ" secondAttribute="leading" constant="20" id="BB3-Rh-Fse"/>
+                            <constraint firstItem="5d2-35-BNQ" firstAttribute="trailing" secondItem="Jfj-uS-2oe" secondAttribute="trailing" constant="20" id="E6X-DL-Ip5"/>
+                            <constraint firstItem="MJO-9V-Q9w" firstAttribute="top" secondItem="bK2-5z-CjA" secondAttribute="bottom" constant="8" id="G5e-aW-xfj"/>
+                            <constraint firstItem="5d2-35-BNQ" firstAttribute="trailing" secondItem="MJO-9V-Q9w" secondAttribute="trailing" constant="20" id="H21-lg-PaT"/>
+                            <constraint firstItem="5d2-35-BNQ" firstAttribute="trailing" secondItem="0xz-YJ-VyE" secondAttribute="trailing" constant="20" id="HBE-li-r5D"/>
+                            <constraint firstItem="Nnd-lA-s5c" firstAttribute="top" secondItem="0xz-YJ-VyE" secondAttribute="bottom" constant="15" id="PoH-nL-DSB"/>
+                            <constraint firstItem="Jfj-uS-2oe" firstAttribute="leading" secondItem="5d2-35-BNQ" secondAttribute="leading" constant="20" id="enD-Gp-eZs"/>
+                            <constraint firstItem="bK2-5z-CjA" firstAttribute="top" secondItem="Jfj-uS-2oe" secondAttribute="bottom" constant="4" id="r57-1y-3LN"/>
+                            <constraint firstItem="Jfj-uS-2oe" firstAttribute="top" secondItem="5d2-35-BNQ" secondAttribute="top" constant="9" id="s1D-ur-MpI"/>
+                            <constraint firstItem="0xz-YJ-VyE" firstAttribute="leading" secondItem="5d2-35-BNQ" secondAttribute="leading" constant="20" id="sIe-4s-nvH"/>
+                            <constraint firstItem="Nnd-lA-s5c" firstAttribute="leading" secondItem="5d2-35-BNQ" secondAttribute="leading" constant="113" id="uLD-TF-xmx"/>
+                            <constraint firstItem="5d2-35-BNQ" firstAttribute="bottom" secondItem="Nnd-lA-s5c" secondAttribute="bottom" constant="44" id="uRO-dz-WBU"/>
+                            <constraint firstItem="5d2-35-BNQ" firstAttribute="trailing" secondItem="bK2-5z-CjA" secondAttribute="trailing" constant="20" id="ufV-xq-ayu"/>
+                            <constraint firstItem="5d2-35-BNQ" firstAttribute="trailing" secondItem="Nnd-lA-s5c" secondAttribute="trailing" constant="112" id="zYl-6e-NU8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="MJO-9V-Q9w" id="BZF-JY-4Hi"/>
+                        <outlet property="label" destination="bK2-5z-CjA" id="Dtm-G0-OaZ"/>
+                        <outlet property="labelEnd" destination="0xz-YJ-VyE" id="pyl-J2-iD1"/>
+                        <outlet property="tappedOutlet" destination="Nnd-lA-s5c" id="F7O-bs-qgi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5K-zj-NIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2373.913043478261" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SRU-NM-dM9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overFullScreen" id="ETZ-xH-zA9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Sba-Uo-PJ4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2fS-Pp-wow">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="glm-GC-idR" kind="relationship" relationship="rootViewController" id="7Lw-2j-WHO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2O-LT-wyL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="-650"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="900" height="600"/>
+        <image name="Image-1" width="485" height="374"/>
+        <image name="Image-2" width="700" height="469"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
